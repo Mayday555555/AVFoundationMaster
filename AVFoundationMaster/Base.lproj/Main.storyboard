@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundationMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUA-py-ReX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EsZ-Jc-lk3"/>
+                                </constraints>
+                                <state key="normal" title="AVSpeechSynthesizer"/>
+                                <connections>
+                                    <action selector="AVSpeechSynthesizerTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dy8-aG-vvp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-dK-F4y">
+                                <rect key="frame" x="0.0" y="84" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pdA-ln-syK"/>
+                                </constraints>
+                                <state key="normal" title="AVAudioPlayer"/>
+                                <connections>
+                                    <action selector="toAVAudioPlayerVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXO-vs-Vht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKl-pa-syZ">
+                                <rect key="frame" x="0.0" y="124" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n7y-v4-kNl"/>
+                                </constraints>
+                                <state key="normal" title="AVAudioRecorder"/>
+                                <connections>
+                                    <action selector="toAVAudioRecorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BvD-Si-h7y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xF-DY-hlE">
+                                <rect key="frame" x="0.0" y="164" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lnw-MQ-1Vz"/>
+                                </constraints>
+                                <state key="normal" title="视频播放"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xhs-kF-dgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUn-t8-PnC">
+                                <rect key="frame" x="0.0" y="204" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2PD-8b-DYD"/>
+                                </constraints>
+                                <state key="normal" title="cmtimeStudy"/>
+                                <connections>
+                                    <action selector="CMTimeStudy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2JH-v1-KWf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KU0-1R-PfZ">
+                                <rect key="frame" x="0.0" y="244" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FrQ-kc-EJy"/>
+                                </constraints>
+                                <state key="normal" title="视频录制"/>
+                                <connections>
+                                    <action selector="recordVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZY-F8-I4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWK-ei-3ot">
+                                <rect key="frame" x="0.0" y="284" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="e85-hv-u8s"/>
+                                </constraints>
+                                <state key="normal" title="AVAsset"/>
+                                <connections>
+                                    <action selector="AVAsset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IMX-KF-2LO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36k-7B-E33">
+                                <rect key="frame" x="0.0" y="324" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="N9g-Rt-qLP"/>
+                                </constraints>
+                                <state key="normal" title="writter"/>
+                                <connections>
+                                    <action selector="writer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Urb-mD-LuW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-pM-5UH">
+                                <rect key="frame" x="0.0" y="364" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3dF-L7-sv1"/>
+                                </constraints>
+                                <state key="normal" title="Composition"/>
+                                <connections>
+                                    <action selector="composition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxs-tK-fEn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="36k-7B-E33" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="54w-Xs-UZV"/>
+                            <constraint firstItem="GIn-dK-F4y" firstAttribute="top" secondItem="XUA-py-ReX" secondAttribute="bottom" id="7kw-9T-54Z"/>
+                            <constraint firstItem="36k-7B-E33" firstAttribute="top" secondItem="sWK-ei-3ot" secondAttribute="bottom" id="82v-bq-kY9"/>
+                            <constraint firstItem="5xF-DY-hlE" firstAttribute="top" secondItem="pKl-pa-syZ" secondAttribute="bottom" id="CST-mg-vNk"/>
+                            <constraint firstItem="pKl-pa-syZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CUd-8F-sQz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KU0-1R-PfZ" secondAttribute="trailing" id="H2B-d2-n4v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GIn-dK-F4y" secondAttribute="trailing" id="JNm-dg-P7A"/>
+                            <constraint firstItem="GIn-dK-F4y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LKq-RA-1jr"/>
+                            <constraint firstItem="jUn-t8-PnC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LWi-Kq-ogz"/>
+                            <constraint firstItem="KU0-1R-PfZ" firstAttribute="top" secondItem="jUn-t8-PnC" secondAttribute="bottom" id="Ssc-Kd-53U"/>
+                            <constraint firstItem="pKl-pa-syZ" firstAttribute="top" secondItem="GIn-dK-F4y" secondAttribute="bottom" id="UM6-kz-0Zj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jUn-t8-PnC" secondAttribute="trailing" id="abC-Ag-zKc"/>
+                            <constraint firstItem="jUn-t8-PnC" firstAttribute="top" secondItem="5xF-DY-hlE" secondAttribute="bottom" id="b1I-z2-Ia9"/>
+                            <constraint firstItem="KU0-1R-PfZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bdQ-1D-2My"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5xF-DY-hlE" secondAttribute="trailing" id="gUc-mR-g7h"/>
+                            <constraint firstItem="qaE-pM-5UH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hWO-52-149"/>
+                            <constraint firstItem="sWK-ei-3ot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iTz-zY-cwB"/>
+                            <constraint firstItem="qaE-pM-5UH" firstAttribute="top" secondItem="36k-7B-E33" secondAttribute="bottom" id="iqT-pW-RHR"/>
+                            <constraint firstItem="XUA-py-ReX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mVg-ZP-dKz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sWK-ei-3ot" secondAttribute="trailing" id="mlH-Jt-k8E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XUA-py-ReX" secondAttribute="trailing" id="o4U-VP-FQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="36k-7B-E33" secondAttribute="trailing" id="o63-a7-ijs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pKl-pa-syZ" secondAttribute="trailing" id="pcH-Qs-A7u"/>
+                            <constraint firstItem="5xF-DY-hlE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rCs-ke-fFb"/>
+                            <constraint firstItem="sWK-ei-3ot" firstAttribute="top" secondItem="KU0-1R-PfZ" secondAttribute="bottom" id="uWD-Ot-OzH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qaE-pM-5UH" secondAttribute="trailing" id="y7h-sX-dI7"/>
+                            <constraint firstItem="XUA-py-ReX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zPW-es-SUb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="-143"/>
+        </scene>
+        <!--Audio Player View Controller-->
+        <scene sceneID="35n-ef-b77">
+            <objects>
+                <viewController storyboardIdentifier="AVAudioPlayerViewController" id="TUq-y8-3om" customClass="AVAudioPlayerViewController" customModule="AVFoundationMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QfQ-TN-Xns"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofb-JV-Iyy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nu2-NC-WFg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-cB-vYa">
+                                <rect key="frame" x="141" y="87" width="92" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MXn-xY-YCN"/>
+                                </constraints>
+                                <state key="normal" title="播放本地语音"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="TUq-y8-3om" eventType="touchUpInside" id="f1m-Gw-CGQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFf-Ar-4S4">
+                                <rect key="frame" x="149" y="169" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Jj9-2i-NGH"/>
+                                </constraints>
+                                <state key="normal" title="获取分贝值"/>
+                                <connections>
+                                    <action selector="getDecibel:" destination="TUq-y8-3om" eventType="touchUpInside" id="JXZ-gs-hXr"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lxf-lE-trV">
+                                <rect key="frame" x="63" y="282" width="249" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="wRe-lc-JBt"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放进度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFA-Hd-Arl">
+                                <rect key="frame" x="63" y="253" width="54" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XrZ-4m-oxd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指定频道分贝值:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsO-hA-bSF">
+                                <rect key="frame" x="63" y="356" width="119" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="htj-A8-MbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均分贝值:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrk-Y3-7t7">
+                                <rect key="frame" x="63" y="413" width="86.5" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="RTm-Y0-W84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQP-hM-qLw">
+                                <rect key="frame" x="63" y="512" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vqY-hb-orp"/>
+                                </constraints>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="onBtnBackTap:" destination="TUq-y8-3om" eventType="touchUpInside" id="Et4-Pi-Hft"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dQP-hM-qLw" firstAttribute="leading" secondItem="E1L-zc-exz" secondAttribute="leading" constant="63" id="3gQ-9g-7vr"/>
+                            <constraint firstItem="DFf-Ar-4S4" firstAttribute="top" secondItem="9NP-cB-vYa" secondAttribute="bottom" constant="52" id="4DX-B0-c9c"/>
+                            <constraint firstItem="nrk-Y3-7t7" firstAttribute="top" secondItem="xsO-hA-bSF" secondAttribute="bottom" constant="8" id="5X6-cl-9S4"/>
+                            <constraint firstItem="xsO-hA-bSF" firstAttribute="top" secondItem="lxf-lE-trV" secondAttribute="bottom" constant="72" id="DkK-9f-WON"/>
+                            <constraint firstItem="E1L-zc-exz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NFA-Hd-Arl" secondAttribute="trailing" symbolic="YES" id="Fgc-4G-32P"/>
+                            <constraint firstItem="NFA-Hd-Arl" firstAttribute="top" secondItem="DFf-Ar-4S4" secondAttribute="bottom" constant="54" id="JfG-Mh-ikl"/>
+                            <constraint firstItem="xsO-hA-bSF" firstAttribute="leading" secondItem="E1L-zc-exz" secondAttribute="leading" constant="63" id="Mvw-P1-G8n"/>
+                            <constraint firstItem="E1L-zc-exz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nrk-Y3-7t7" secondAttribute="trailing" symbolic="YES" id="PHu-Z9-3qx"/>
+                            <constraint firstItem="9NP-cB-vYa" firstAttribute="top" secondItem="QfQ-TN-Xns" secondAttribute="bottom" constant="43" id="Pac-XB-yE3"/>
+                            <constraint firstItem="NFA-Hd-Arl" firstAttribute="leading" secondItem="E1L-zc-exz" secondAttribute="leading" constant="63" id="Rjc-dM-pLK"/>
+                            <constraint firstItem="9NP-cB-vYa" firstAttribute="leading" secondItem="E1L-zc-exz" secondAttribute="leading" constant="141" id="Rqk-e5-HUf"/>
+                            <constraint firstItem="lxf-lE-trV" firstAttribute="top" secondItem="NFA-Hd-Arl" secondAttribute="bottom" constant="8" id="Tky-R7-mQ0"/>
+                            <constraint firstItem="E1L-zc-exz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9NP-cB-vYa" secondAttribute="trailing" symbolic="YES" id="UiU-Wn-lZJ"/>
+                            <constraint firstItem="nrk-Y3-7t7" firstAttribute="leading" secondItem="E1L-zc-exz" secondAttribute="leading" constant="63" id="cWQ-Ch-Lbl"/>
+                            <constraint firstItem="lxf-lE-trV" firstAttribute="leading" secondItem="Nu2-NC-WFg" secondAttribute="leading" constant="63" id="doU-6b-ZIt"/>
+                            <constraint firstItem="E1L-zc-exz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DFf-Ar-4S4" secondAttribute="trailing" symbolic="YES" id="eWd-31-v82"/>
+                            <constraint firstItem="E1L-zc-exz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dQP-hM-qLw" secondAttribute="trailing" symbolic="YES" id="lbR-q3-mP1"/>
+                            <constraint firstItem="DFf-Ar-4S4" firstAttribute="leading" secondItem="E1L-zc-exz" secondAttribute="leading" constant="149" id="oWr-cV-eQa"/>
+                            <constraint firstItem="E1L-zc-exz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xsO-hA-bSF" secondAttribute="trailing" symbolic="YES" id="vCo-Wp-nUI"/>
+                            <constraint firstItem="dQP-hM-qLw" firstAttribute="top" secondItem="nrk-Y3-7t7" secondAttribute="bottom" constant="53" id="zho-BX-zeM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E1L-zc-exz"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlayAudio" destination="9NP-cB-vYa" id="BCr-2T-iEq"/>
+                        <outlet property="labelAverageDecibel" destination="nrk-Y3-7t7" id="S6q-a3-Dvt"/>
+                        <outlet property="labelPeakDecibel" destination="xsO-hA-bSF" id="slQ-vH-V95"/>
+                        <outlet property="progressView" destination="lxf-lE-trV" id="rJE-Ut-f3u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMy-Mu-Hdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="1029.5352323838081"/>
+        </scene>
+        <!--Audio Recorder Controller-->
+        <scene sceneID="MFZ-Tz-riD">
+            <objects>
+                <viewController storyboardIdentifier="AVAudioRecorderController" id="vNI-6P-IsF" customClass="AVAudioRecorderController" customModule="AVFoundationMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YpV-rY-4Ur"/>
+                        <viewControllerLayoutGuide type="bottom" id="WCV-jB-Ha6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8O-H0-Qre">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQo-nn-bPE">
+                                <rect key="frame" x="167" y="522" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="onBtnBackTap:" destination="vNI-6P-IsF" eventType="touchUpInside" id="SFm-mU-0SU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmp-QK-JiK">
+                                <rect key="frame" x="136" y="283" width="92" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始录制语音"/>
+                                <connections>
+                                    <action selector="onBtnStartRecordTap:" destination="vNI-6P-IsF" eventType="touchUpInside" id="6hg-1K-HYB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="录制时长：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8e-xA-dqH">
+                                <rect key="frame" x="40" y="176" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 秒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-Sf-If6">
+                                <rect key="frame" x="141" y="176" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="指定频道分贝值:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coU-yK-wfa">
+                                <rect key="frame" x="40" y="83" width="284" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平均分贝值:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-FE-ahT">
+                                <rect key="frame" x="40" y="128" width="284" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-kG-Qga">
+                                <rect key="frame" x="151" y="398" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="播放录制">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBtnPlayRecordTap:" destination="vNI-6P-IsF" eventType="touchUpInside" id="IzX-kS-53g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="准备录制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKN-F0-7gJ">
+                                <rect key="frame" x="40" y="218" width="158" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGq-Aa-H7Z">
+                                <rect key="frame" x="136" y="332" width="92" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="结束录制语音"/>
+                                <connections>
+                                    <action selector="onBtnEndRecordTap:" destination="vNI-6P-IsF" eventType="touchUpInside" id="wSt-NF-80W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="geQ-MN-qkQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnEndRecord" destination="jGq-Aa-H7Z" id="Sfw-px-pjg"/>
+                        <outlet property="btnPlayRecord" destination="bcP-kG-Qga" id="yri-FS-yt2"/>
+                        <outlet property="btnStartRecord" destination="lmp-QK-JiK" id="kva-vD-QwH"/>
+                        <outlet property="labelAveragePower" destination="0nl-FE-ahT" id="kmo-WD-dAT"/>
+                        <outlet property="labelPeakPower" destination="coU-yK-wfa" id="6bM-Qp-gOb"/>
+                        <outlet property="labelRecordTime" destination="dBo-Sf-If6" id="eD3-gf-oBP"/>
+                        <outlet property="labelState" destination="IKN-F0-7gJ" id="3Wg-2c-dAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vL2-XG-5Ha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.5999999999999" y="1029.5352323838081"/>
+        </scene>
+        <!--Video Play View Controller-->
+        <scene sceneID="7dD-pz-yQm">
+            <objects>
+                <viewController storyboardIdentifier="VideoPlayViewController" id="WWj-Sr-UmJ" customClass="VideoPlayViewController" customModule="AVFoundationMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5W5-Jg-UWJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="NmC-vj-wcy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z5x-f2-GwS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="视频总时长：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojn-Pg-Bat">
+                                <rect key="frame" x="78" y="436" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="播放进度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIZ-Hz-fz1">
+                                <rect key="frame" x="78" y="479" width="281" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="缓存进度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-El-ueK">
+                                <rect key="frame" x="78" y="519" width="281" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-Mo-ksr">
+                                <rect key="frame" x="1" y="436" width="69" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="onBtnBackTap:" destination="WWj-Sr-UmJ" eventType="touchUpInside" id="F5q-Ey-In6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="qTV-gc-0Qm"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelCache" destination="1kb-El-ueK" id="Qxw-Ok-39e"/>
+                        <outlet property="videoPlayTime" destination="HIZ-Hz-fz1" id="8k3-c7-SGt"/>
+                        <outlet property="videoTotalTime" destination="Ojn-Pg-Bat" id="7ee-dH-2Hc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzy-Z4-4sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="-395.35232383808096"/>
+        </scene>
+        <!--Video Record View Controller-->
+        <scene sceneID="GAq-c3-XSM">
+            <objects>
+                <viewController storyboardIdentifier="VideoRecordViewController" id="gEf-Xk-ysi" customClass="VideoRecordViewController" customModule="AVFoundationMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rv0-Oa-d8r"/>
+                        <viewControllerLayoutGuide type="bottom" id="TU4-uC-GR6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5bA-Ma-KEg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lM-TE-cxg">
+                                <rect key="frame" x="151" y="464" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始录制"/>
+                                <connections>
+                                    <action selector="beginRecord:" destination="gEf-Xk-ysi" eventType="touchUpInside" id="Ldd-Va-OWm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj5-FN-g2Z">
+                                <rect key="frame" x="167" y="523" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="播放">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playRecord:" destination="gEf-Xk-ysi" eventType="touchUpInside" id="t6l-Ir-6Ry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgW-8u-9cM">
+                                <rect key="frame" x="30" y="456" width="56" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="closeVC:" destination="gEf-Xk-ysi" eventType="touchUpInside" id="tId-XK-4Bs"/>
+                                    <segue destination="yVy-6R-t7a" kind="unwind" unwindAction="unwindSegue:" id="IzU-fd-qz8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Eox-s4-pYR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P58-Jy-JIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yVy-6R-t7a" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="315.29235382308849"/>
+        </scene>
+        <!--Video Write View Controller-->
+        <scene sceneID="gVk-zu-5pH">
+            <objects>
+                <viewController storyboardIdentifier="VideoWriteViewController" id="IZR-Lv-gW0" customClass="VideoWriteViewController" customModule="AVFoundationMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8oF-j0-pV4"/>
+                        <viewControllerLayoutGuide type="bottom" id="srK-46-aQ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wbl-k6-PGP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wb-Ix-9YF">
+                                <rect key="frame" x="172" y="525" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="播放">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="IZR-Lv-gW0" eventType="touchUpInside" id="UYT-b6-CWd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-BM-d4P">
+                                <rect key="frame" x="141" y="444" width="92" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始录制"/>
+                                <connections>
+                                    <action selector="startRecord:" destination="IZR-Lv-gW0" eventType="touchUpInside" id="NQm-73-0BD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kje-lS-fea">
+                                <rect key="frame" x="57" y="455" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="close:" destination="IZR-Lv-gW0" eventType="touchUpInside" id="bQ0-iE-1ji"/>
+                                    <segue destination="a7S-ne-oX8" kind="unwind" unwindAction="unwindSegue:" id="7LG-JZ-Kqv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="WzD-iA-sOd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Se0-qm-VWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="a7S-ne-oX8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1741.5999999999999" y="314.39280359820094"/>
+        </scene>
+    </scenes>
+</document>
